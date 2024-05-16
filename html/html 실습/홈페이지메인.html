@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>홈페이지메인</title>
+        <style>
+            .icon{
+                width: 50px;
+                height: 50px;
+            }
+            body{
+                text-align: center;/*글자 가운데 정렬*/
+                background-color: blanchedalmond;
+                margin: 0 auto;/*형식 자동 정렬*/
+            }
+            h1{
+                background-color: aquamarine;
+            }
+            video{
+                width: 90%;
+            }
+            mark{
+                background-color: rgb(250, 200, 208);
+                color: cornflowerblue;
+            }
+           
+        </style>
+    </head>
+    <body>
+        <h1>홈페이지 메인</h1>
+        
+        <h3><mark>홈페이지에 오신 것을 환영합니다.</mark></h3>
+
+        <video autoplay muted loop>
+            <source src="C:\Users\user1\frontend-workspace\html\비디오들\곰.mp4" type="video/mp4">
+        </video>
+        <br>
+        <a href="홈페이지게시판.html"><span class="icon"><img src="게시판아이콘.png"/></span></a>
+        
+        <!-- a 태그 이용해서 동영상으로 이동하기 만들어주기-->
+        <a href="동영상.html"><span class="icon"><img src="동영상아이콘.png"></span></a>
+        <a href="피자주문.html">주문하기</a>
+    </body>
+</html>
