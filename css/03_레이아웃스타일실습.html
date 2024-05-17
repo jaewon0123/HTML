@@ -51,11 +51,91 @@
     <div class="블록 영역1번 인라인">1번 영역</div>
     <div class="블록 영역2번 인라인">2번 영역</div>
     <h3>inline-block, none 확인하기</h3>
-    <div class="블록 영역1번 정렬">1번 영역</div>
-    <div class="블록 영역2번 정렬">2번 영역</div>
-    <div class="블록 영역3번 정렬 히든">3번 영역</div>
-    <div class="블록 영역4번 정렬">4번 영역</div>
-    <div class="블록 영역5번 정렬 논">5번 영역</div>
-    <div class="블록 영역6번 정렬">6번 영역</div>
+    <span class="블록 영역1번 정렬">1번 영역</span>
+    <span class="블록 영역2번 정렬">2번 영역</span>
+    <span class="블록 영역3번 정렬 히든">3번 영역</span>
+    <span class="블록 영역4번 정렬">4번 영역</span>
+    <span class="블록 영역5번 정렬 논">5번 영역</span>
+    <span class="블록 영역6번 정렬">6번 영역</span>
+    <hr>
+    <h3>화면 영역 분할</h3>
+    <h4>상하로 2분할 하기</h4>
+    <style>
+        .컨테이너 {
+            border: 3px solid red;
+            width: 400px;
+            height: 400px;
+        }
+        .컨테이너 > div{
+            width: 50%;
+            height: 100%;
+            float: right;
+        }
+        .컨테이너 > div:first-child{
+            background-color: lightblue;
+        }
+        .컨테이너 > div:last-child{
+            background-color: lightgreen;
+        }
+    </style>
+    <div class="컨테이너">
+        <div></div>
+        <div></div>
+    </div>
+    <br>
+    <style>
+        #태그2 > div:first-child{
+            background-color: lightgray;
+        }
+        #태그2 > div:last-child{
+            background-color: lightpink;
+        }
+    </style>
+    <div class="컨테이너" id="태그2">
+        <div></div>
+        <div></div>
+    </div>
+    <style>
+        .컨테이너2{
+            border: 3px solid red;
+            width: 400px;
+            height: 400px;
+        }
+        .컨테이너2 > div {
+            width: 100%;
+            height: 50%;
+        }
+        #태그3 > div:nth-child(1){
+            height: 20%;
+            background-color: tomato;
+        }
+        #태그3 > div:nth-child(2){
+            height: 30%;
+            background-color: khaki;
+        }
+        #태그3 > div:nth-child(3){
+            height: 20%;
+            background-color: aquamarine;
+        }
+        #태그3 > div:nth-child(4){
+            height: 30%;
+            background-color: lightgreen;
+        }
+        /*
+        nth-child 특정한 순서에 있는 태그를 선택할 때 사용
+        n       숫자
+        th      번째(순서)
+        child   자식
+        */
+
+    </style>
+    <hr>
+    <h3>상하 3분할</h3>
+    <div class="컨테이너2" id="태그3">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
 </body>
 </html>
